@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ArenaAscendEditor Win64 Development Build",
+      "group": "build",
+      "type": "shell",
+      "command": "Engine\\Build\\BatchFiles\\Build.bat",
+      "args": [
+        "ArenaAscendEditor",
+        "Win64",
+        "Development",
+        "C:/Users/answo/UnrealEngine/Projects/ArenaAscend/ArenaAscend.uproject",
+        "-waitmutex"
+      ],
+      "options": {
+        "cwd": "C:/Program Files/Epic Games/UE_5.5"
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

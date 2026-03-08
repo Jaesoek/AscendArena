@@ -1,0 +1,628 @@
+{
+	"folders": [
+		{
+			"name": "ArenaAscend",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Program Files\\Epic Games\\UE_5.5"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64;${env:PATH}",
+			"DOTNET_ROOT": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64",
+			"DOTNET_HOST_PATH": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64\\dotnet.exe",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		},
+		"dotnet.defaultSolution": "disable"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ArenaAscend Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscend Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscend Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscend Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Test",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Test",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscend Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Test",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscend Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscend Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscend",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscendEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscendEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ArenaAscendEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"label": "ArenaAscendEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ArenaAscendEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ArenaAscend (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "ArenaAscend Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscend (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "ArenaAscend Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscend (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "ArenaAscend Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscend (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "ArenaAscend Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscend (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "ArenaAscend Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscendEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "ArenaAscendEditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscendEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "ArenaAscendEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Launch ArenaAscendEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "ArenaAscendEditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.5"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\ArenaAscend.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64;${env:PATH}",
+					"DOTNET_ROOT": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64",
+					"DOTNET_HOST_PATH": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64\\dotnet.exe",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5"
+			}
+		]
+	}
+}

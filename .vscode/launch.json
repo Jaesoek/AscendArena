@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch ArenaAscendEditor (Development)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "C:/Program Files/Epic Games/UE_5.5/Engine/Binaries/Win64/UnrealEditor.exe",
+      "args": [
+        "C:/Users/answo/UnrealEngine/Projects/ArenaAscend/ArenaAscend.uproject"
+      ],
+      "cwd": "C:/Program Files/Epic Games/UE_5.5",
+      "preLaunchTask": "ArenaAscendEditor Win64 Development Build",
+      "stopAtEntry": false,
+      "console": "integratedTerminal",
+      "visualizerFile": "C:/Program Files/Epic Games/UE_5.5/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+      "sourceFileMap": {
+        "D:/build/++UE5/Sync": "C:/Program Files/Epic Games/UE_5.5"
+      }
+    },
+    {
+      "name": "Attach UnrealEditor",
+      "type": "cppvsdbg",
+      "request": "attach",
+      "processName": "UnrealEditor.exe"
+    }
+  ]
+}
