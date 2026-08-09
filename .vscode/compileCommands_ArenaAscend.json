@@ -168,7 +168,7 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Dev\\Widget_TestCase.cpp",
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\AscendUISettings.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
@@ -176,7 +176,7 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Dev\\Widget_TestCase.h",
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\AscendUISettings.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
@@ -200,7 +200,7 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDRoot.cpp",
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDInGame.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
@@ -208,7 +208,95 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDRoot.h",
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDInGame.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDLobby.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\HUD\\AscendHUDLobby.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Screen\\AscendPopupBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Screen\\AscendPopupBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Screen\\AscendSceneBase.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Screen\\AscendSceneBase.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Text\\AscendHangulSubstitution.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Text\\AscendHangulSubstitution.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Text\\AscendTextBlock.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Text\\AscendTextBlock.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\Source\\ArenaAscend\\UI\\Text\\Tests\\AscendHangulSubstitutionTests.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend\\ArenaAscend.1.rsp"

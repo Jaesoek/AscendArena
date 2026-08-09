@@ -20,7 +20,8 @@ public class ArenaAscend : ModuleRules
 				"GameplayTags",
 				"GameplayTasks",
 				"CommonUI",
-				"UMG"
+				"UMG",
+				"DeveloperSettings"
 			}
 		);
 	}

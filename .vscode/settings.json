@@ -4,12 +4,21 @@
   "C_Cpp.default.cStandard": "c17",
   "C_Cpp.default.cppStandard": "c++20",
   "C_Cpp.default.compileCommands": "${workspaceFolder}/.vscode/compileCommands_ArenaAscend.json",
-  "C_Cpp.intelliSenseEngine": "default",
-  "C_Cpp.autocomplete": "Default",
-  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "C_Cpp.autocomplete": "Disabled",
+  "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp.formatting": "disabled",
   "C_Cpp.workspaceParsingPriority": "low",
-  "clangd.enabled": false,
+  "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+  "clangd.enabled": true,
+  "clangd.arguments": [
+    "--compile-commands-dir=.vscode",
+    "--background-index",
+    "--completion-style=detailed",
+    "--header-insertion=never",
+    "--pch-storage=memory",
+    "--query-driver=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/**/bin/Hostx64/x64/cl.exe"
+  ],
   "files.associations": {
     "*.generated.h": "cpp",
     "*.gen.cpp": "cpp"
@@ -20,16 +29,22 @@
     "**/Binaries/**": true,
     "**/DerivedDataCache/**": true,
     "**/Intermediate/**": true,
-    "**/Saved/**": true
+    "**/Saved/**": true,
+    "**/.vscode/compileCommands_*/**": true
   },
   "search.exclude": {
     "**/.vs": true,
     "**/Binaries": true,
     "**/DerivedDataCache": true,
     "**/Intermediate": true,
-    "**/Saved": true
+    "**/Saved": true,
+    "**/.vscode/compileCommands_*/**": true
   },
   "files.autoGuessEncoding": true,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.copilot.chat.enabled": false,
   "files.candidateGuessEncodings": [
     "windows949",
     "euc-kr",

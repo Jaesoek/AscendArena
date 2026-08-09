@@ -1,21 +1,20 @@
 {
-  "configurations": [
-    {
-      "name": "ArenaAscendEditor Win64 Development",
-      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe",
-      "cStandard": "c17",
-      "cppStandard": "c++20",
-      "intelliSenseMode": "windows-msvc-x64",
-      "compileCommands": "${workspaceFolder}/.vscode/compileCommands_ArenaAscend.json"
-    },
-    {
-      "name": "Default Win64",
-      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe",
-      "cStandard": "c17",
-      "cppStandard": "c++20",
-      "intelliSenseMode": "windows-msvc-x64",
-      "compileCommands": "${workspaceFolder}/.vscode/compileCommands_Default.json"
-    }
-  ],
-  "version": 4
+	"configurations": [
+		{
+			"name": "ArenaAscendEditor Editor Win64 Development (ArenaAscend)",
+			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++20",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_ArenaAscend.json"
+		},
+		{
+			"name": "Win32",
+			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"cStandard": "c17",
+			"cppStandard": "c++20",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "C:\\Users\\answo\\UnrealEngine\\Projects\\ArenaAscend\\.vscode\\compileCommands_Default.json"
+		}
+	]
 }

@@ -1,4 +1,6 @@
+/.agents
 /.git
+/.github
 /.vs
 /.vscode
 /Content

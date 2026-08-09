@@ -25,8 +25,7 @@ AAscendCharacter::AAscendCharacter()
 	bUseControllerRotationRoll = false;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f); // ...at this rotation rate
+	GetCharacterMovement()->bOrientRotationToMovement = false; // Cursor aiming controls the character's facing direction.
 
 	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
 	// instead of recompiling to adjust them
@@ -55,6 +54,21 @@ AAscendCharacter::AAscendCharacter()
 //////////////////////////////////////////////////////////////////////////
 // Input
 
+void AAscendCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// Keep the quarter-view camera angle in world space while the character rotates.
+	// Cache the Blueprint-configured angle before making the boom independent of its parent.
+	const FRotator FixedCameraRotation = CameraBoom->GetComponentRotation();
+	CameraBoom->bUsePawnControlRotation = false;
+	CameraBoom->SetUsingAbsoluteRotation(true);
+	CameraBoom->SetWorldRotation(FixedCameraRotation);
+
+	// This also enforces the setting if the child Character Blueprint overrides it.
+	GetCharacterMovement()->bOrientRotationToMovement = false;
+}
+
 void AAscendCharacter::NotifyControllerChanged()
 {
 	Super::NotifyControllerChanged();
@@ -81,8 +95,8 @@ void AAscendCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		// Moving
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AAscendCharacter::Move);
 
-		// Looking
-		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AAscendCharacter::Look);
+		// The fixed quarter-view camera does not consume mouse-look input.
+		// AAscendPlayerController rotates the character toward the mouse cursor instead.
 	}
 	else
 	{
@@ -115,13 +129,6 @@ void AAscendCharacter::Move(const FInputActionValue& Value)
 
 void AAscendCharacter::Look(const FInputActionValue& Value)
 {
-	// input is a Vector2D
-	FVector2D LookAxisVector = Value.Get<FVector2D>();
-
-	if (Controller != nullptr)
-	{
-		// add yaw and pitch input to controller
-		AddControllerYawInput(LookAxisVector.X);
-		AddControllerPitchInput(LookAxisVector.Y);
-	}
+	// The camera remains fixed for the quarter-view shooting controls.
+	(void)Value;
 }
